@@ -1,74 +1,74 @@
-$grid-float-breakpoint: 768px;
-
-body {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-}
-
-.page-header {
-  background-color: #dd4814;
-  color: white;
-  margin-top: 0;
-  text-align: center;
-  padding: 7.5% 0;
-}
-
-footer {
-  background-color: #dd4814;
-  text-align: center;
-  color: white;
-  padding: 2.5%;
-  a {
-    color: white;
-    border-bottom: 1px dotted white;
-    &:hover, &:active, &:focus {
-      color: white;
-      border-bottom: 1px solid white;
-      text-decoration: none;
-    }
-  }
-}
-
-.text-picture {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  &.text-picture--gray-bg {
-    background-color: #EEE;
-  }
-  .text-picture__text {
-    h2 {
-      margin-top: 0;
-    }
-    @media (min-width: $grid-float-breakpoint) {
-      p:last-child {
-          margin-bottom: 0;
-      }
-    }    
-  }  
-  .text-picture__picture {
-    text-align: center;
-    img {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }   
-}
-
-// I only want Flexbox to kick in for larger devices.
-// i.e. I want to keep bootstraps mobile grid scaffolding intact.
-@media (min-width: $grid-float-breakpoint) {
-  .row--flex {
-    display: flex;
-    .row--flex__col {
-      align-self: flex-start;
-    }
-    .row--flex__col--center {
-      align-self: center;
-    }
-    .row--flex__col--bottom {
-      align-self: flex-end;
-    }
-  }
-}
-
-
+$grid-float-breakpoint: 768px;
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+.page-header {
+  background-color: #dd4814;
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  padding: 7.5% 0;
+}
+
+footer {
+  background-color: #dd4814;
+  text-align: center;
+  color: white;
+  padding: 2.5%;
+  a {
+    color: white;
+    border-bottom: 1px dotted white;
+    &:hover, &:active, &:focus {
+      color: white;
+      border-bottom: 1px solid white;
+      text-decoration: none;
+    }
+  }
+}
+
+.text-picture {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  &.text-picture--gray-bg {
+    background-color: #EEE;
+  }
+  .text-picture__text {
+    h2 {
+      margin-top: 0;
+    }
+    @media (min-width: $grid-float-breakpoint) {
+      p:last-child {
+          margin-bottom: 0;
+      }
+    }    
+  }  
+  .text-picture__picture {
+    text-align: center;
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }   
+}
+
+// I only want Flexbox to kick in for larger devices.
+// i.e. I want to keep bootstraps mobile grid scaffolding intact.
+@media (min-width: $grid-float-breakpoint) {
+  .row--flex {
+    display: flex;
+    .row--flex__col {
+      align-self: flex-start;
+    }
+    .row--flex__col--center {
+      align-self: center;
+    }
+    .row--flex__col--bottom {
+      align-self: flex-end;
+    }
+  }
+}
+
+
